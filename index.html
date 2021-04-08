@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+    <title>Todo List</title>
+</head>
+<body>
+
+    <div id="app" class="container">
+        
+        <div class="row">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="new-todo">
+                <input v-model='newTodo' type="text" placeholder="Nuovo todo" @keyup.enter='addTodo'>
+                <button @click='addTodo' @keyup.enter='addTodo'>Aggiungi</button>
+            </div>
+        </div>
+
+        <div class="todos-container">
+            <ul v-if='items.length > 0'>
+                <li class="todo" v-for='(i,index) in items' >
+                    {{i}}
+                    <i @click='deleteTodo(index)' class="fas fa-times"></i>
+                </li>
+            </ul>
+            <h2 v-else>Non ci sono elementi</h2>
+        </div>
+
+    </div>
+    
+</body>
+</html>

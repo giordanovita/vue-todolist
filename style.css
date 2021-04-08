@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+.container {
+    margin: 0 auto;
+    width: 70%;
+    height: 100vh;
+  }
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.logo img{
+    max-width: 300px;
+}
+
+.new-todo input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    min-width: 300px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.new-todo button {
+    padding: 11px 22px;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 1px 2px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.todos-container {
+    margin: 40px; 
+    border-radius: 10px;
+    background: #F5F7F7;
+    padding: 30px;
+}
+
+.todo i{
+    float: right;
+    cursor: pointer;
+    color: red;
+}
+
+.new-todo {
+    text-align: center;
+}
+
+.new-todo input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    min-width: 300px;
+    margin-right: 10px;
+}
+
+.new-todo button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.todos-container {
+    margin: 40px; 
+    border-radius: 10px;
+    background: #F5F7F7;
+    padding: 30px;
+}
+
+.todos-container ul {
+    list-style: none;
+}
+
+.todo {
+    border-bottom: 1px solid #DADEE1;
+    padding: 10px; 
+    font-weight: bold;
+
+}
+
+.todo:hover {
+    background: white;
+}
+
+h2{
+    text-align: center;
+}
