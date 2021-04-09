@@ -18,9 +18,9 @@ function VueTodoList(){
             addTodo:function(){
                 if(this.newTodo.length > 0){
                     this.items.push(this.newTodo);
-                    return this.newTodo = ''
+                    return this.newTodo = '';
                 }else{
-                    alert("Per poter aggiungere un elemento alla lista devi scriverlo nell'apposito campo")
+                    alert("Per poter aggiungere un elemento alla lista devi scriverlo nell'apposito campo");
                 }
             },
 
